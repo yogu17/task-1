@@ -1,0 +1,49 @@
+
+
+HTTP
+
+HTTP (Hypertext Transfer Protocol) is a set of rules that runs on top of the TCP/IP suite of protocols
+ and defines how files are to be transferred between clients and servers on the world wide web.
+
+
+HTTP.1 
+*   HTTP1 loads a single request for every TCP connection   
+* 
+* The concept of headers both for requests (from the client machine) as well as responses (from servers) was introduced. The use of headers such as GET, POST, HEAD added extended flexibility, none of which was possible with the earlier version.
+* Version information was now included.
+* It allowed a single request/response for every TCP connection.
+* Status codes were used to indicate successful requests and to indicate transmission errors.
+* The content-type header made it possible to send files other than plain HTML, including scripts and media.
+
+
+
+http.2 
+* HTTP2 avoids network delay by using multiplexing. HTTP
+
+* HTTP/2 is faster in terms of performance and site loading time than HTTP1
+* It introduces the concept of a server push where the server anticipates the resources that will be required by the client and pushes them prior to the client making requests. 
+The client retains the authority to deny the server push; however, in most cases, this feature adds a lot of efficiency to the process.
+*Introduces the concept of multiplexing that interleaves the requests and responses without head-of-line blocking and does so over a single TCP connection.
+* It is a binary protocol i.e. only binary commands in the form of 0s and 1s are transmitted over the wire. The binary framing layer divides 
+the message into frames that are segregated based on their type _ Data or Header. This feature greatly increases efficiency in terms of security, compression and multiplexing.
+
+
+High level Differences between HTTP/2 and HTTP/1.1:
+HTTP2 is binary, instead of textual
+HTTP2 is fully multiplexed, instead of ordered and blocking
+HTP2 uses header compression to reduce overhead
+HTTP2 allows servers to “push” responses proactively into client caches
+
+
+
+
+2 . Objects and its internal representation in Javascript
+
+*In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties.
+ A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+
+ Creating Objects in JavaScript:
+By object literal
+By creating instance of Object directly (using new keyword)
+
+
